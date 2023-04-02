@@ -34,5 +34,21 @@ public class MinSubsequence {
 //            // Increment pointer index_s1 to check next character in str1
 //            indexS1 += 1;
 //        }
+        while(indexStr1<sizeStr1){
+            // check if the character pointed by indexS1 in str1 is the same as the
+            // character pointed by indexS2 in str2.
+            if(str1.charAt(indexStr1) == str2.charAt(indexStr2)){
+                // if the pointed character is the same in both strings increment indexS2.
+                indexStr2++;
+                // check if indexS2 has reached the end of str2
+                if(indexStr2 == sizeStr2){
+                    // At this point the str1 contains all characters of str2
+                    int start = indexStr1;
+                    int end = indexStr2;
+
+                }
+            }
+            indexStr1++;
+        }
     }
 }
