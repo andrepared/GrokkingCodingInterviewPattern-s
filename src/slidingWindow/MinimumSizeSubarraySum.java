@@ -46,4 +46,35 @@ class MinimumSubArraySum {
 //            System.out.println(PrintHyphens.repeat("-", 100));
 //        }
 //    }
+    public static int minSubArrayLen(int target, int[] nums)
+    {
+        // Initializing windowSize to max number
+        int windowSize = Integer.MAX_VALUE;
+        int currSubArraySize = 0;
+        // Initialize start pointer to 0 and sum to 0
+        int start =0;
+        int totalSum =0;
+
+        // Iterate over the input array
+        for (int end =0;end<nums.length;end++)
+        {
+            totalSum += nums[end];
+            // Check if we can remove elements from the start of the subarray while still
+            // satisfying the target condition.
+            while (totalSum>=target)
+            {
+                // Find size of current subarray
+                currSubArraySize = (end + 1) - start;
+                windowSize = Math.min(windowSize,currSubArraySize);
+                totalSum -= nums[start];
+                start += 1;
+            }
+        }
+        if (windowSize != Integer.MAX_VALUE)
+        {
+            return windowSize;
+        } else {
+            return 0;
+        }
+    }
 }

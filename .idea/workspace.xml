@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1561c30-4344-400a-9100-be386c96aa29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,12 +33,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4075" />
+          <entry key="java" value="4772" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4075" />
+          <entry key="JAVA" value="4772" />
         </counts>
       </usages-collector>
     </session>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="2052">
+              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/slidingWindow/PrintHyphens.java" />
         <option value="$PROJECT_DIR$/src/slidingWindow/MinimumWindowSubstring.java" />
         <option value="$PROJECT_DIR$/src/slidingWindow/findLongestSubstring.java" />
+        <option value="$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java" />
       </list>
     </option>
   </component>
@@ -150,7 +151,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1680548034798" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1680548123844" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -189,7 +190,7 @@
     <frame x="-3360" y="-1635" width="1440" height="2560" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -278,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/slidingWindow/MinimumSizeSubarraySum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="2052">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
         </state>
       </provider>
     </entry>
