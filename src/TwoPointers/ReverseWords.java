@@ -1,6 +1,6 @@
 package TwoPointers;
 import java.util.*;
-import java.lang.String;
+
 class ReverseWords {
 
     public static String reverseWords(String s) {
@@ -29,8 +29,6 @@ class ReverseWords {
 
         return builder.toString();
     }
-
-
     // Function to reverse the whole string
     public static void strRev(StringBuilder sb, int startRev, int endRev) {
         // Starting from the two ends of the list, and moving
@@ -41,6 +39,18 @@ class ReverseWords {
             sb.setCharAt(endRev--, temp);
         }
     }
+    // trim leading, trailing and multiple spaces
+    static String cleanSpaces(char[] a, int n) {
+        // Convert character array to string
+        String str = new String(a, 0, n);
+
+        // Trim extra spaces at the beginning and end of the string
+        // And replace multiple spaces with a single space
+        str = str.replaceAll("\\s+", " ").trim();
+
+        return str;
+    }
+
 
     public static void main(String[] args) {
         String[] inputs = {
