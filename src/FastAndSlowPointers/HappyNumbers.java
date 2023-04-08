@@ -1,48 +1,43 @@
 package FastAndSlowPointers;
 
-public class HappyNumbers {
-    public static String printStingWithMarkers(String strn, int pValue) {
-        String out = "";
-        for (int i = 0; i < pValue; i++) {
-            out += String.valueOf(strn.charAt(i));
-        }
-        out += "«";
-        out += String.valueOf(strn.charAt(pValue)) + "»";
-        for (int i = pValue + 1; i < strn.length(); i++) {
-            out += String.valueOf(strn.charAt(i));
-        }
-        return out;
-    }
+
+class HappyNumber {
 
     public static int sumOfSquaredDigits(int number) {
         int totalSum = 0;
-        System.out.println("\tCalculating the sum of squared digits");
-        System.out.println("\tTotal sum: " + totalSum);
-        int i = 1;
-        while (number > 0) {
-            System.out.println("\tLoop iteration: " + i);
-            int a = String.valueOf(number).length();
-            System.out.println("\t\tNumber; " + number);
+        while (number != 0) {
             int digit = number % 10;
-            System.out.println("\t\tWe will start with the last digit of the number " + digit);
-            System.out.println("\t\t" + printStingWithMarkers(String.valueOf(number), a - 1) + " ⟶ Last Digit: " + digit);
-            System.out.println("\t\tUpdating number ⟶ number/10 = " + number + "/10");
             number = number / 10;
-            System.out.println("\t\t\t\tThe number is now: " + number);
-            System.out.println("\t\t\tTotal sum + square of the digit = " + totalSum + " + " + digit + " * " + digit + " = " + digit);
             totalSum += (Math.pow(digit, 2));
-            i = i + 1;
         }
+        System.out.println("\t\tSum of squared digits: " + totalSum);
         return totalSum;
+    }
+    public static boolean isHappyNumber(int n) {
+        int slowPointer = n; // The slow pointer value
+        System.out.println("\tSetting slow pointer = input number " + slowPointer);
+        System.out.println("\tSetting fast pointer = sum of squared digits of " + n);
+        int fastPointer = sumOfSquaredDigits(n); // The fast pointer value
+        System.out.println("\tFast pointer:" + fastPointer);
+        while (fastPointer != 1 && slowPointer != fastPointer) { // Terminating condition
+            System.out.println("\n\tRepeatedly updating slow and fast pointers\n");
+            // Incrementing the slow pointer by 1 iteration
+            slowPointer = sumOfSquaredDigits(slowPointer);
+            System.out.println("\tThe updated slow pointer is " + slowPointer);
+            // Incrementing the fast pointer by 2 iterations
+            fastPointer = sumOfSquaredDigits(sumOfSquaredDigits(fastPointer));
+            System.out.println("\tThe updated fast pointer is " + fastPointer + "\n");
+        }
+        System.out.println("\tIs it a happy number?: " + (fastPointer == 1)); // If 1 is found then it returns True, otherwise False
+        return fastPointer == 1;
     }
 
     public static void main(String args[]) {
-        int[] a = {1, 5, 19, 25, 7};
-//        for (int i = 0; i < a.length; i++) {
-//            System.out.println(i + 1 + "." + "\tInput Number:" + a[i]);
-//            System.out.println("\tSum of squared digits: " + sumOfSquaredDigits(a[i]));
-//            System.out.println(PrintHyphens.repeat("-", 100));
-//        }
+        int a[] = {1, 5, 19, 25, 7};
+        for (int i = 0; i < a.length; i++) {
+            System.out.println((i + 1) + ".\tInput Number: " + a[i]);
+            isHappyNumber(a[i]);
+            //
+        }
     }
 }
-
