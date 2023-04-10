@@ -16,6 +16,17 @@ public class main
             slow = slow.next;
             fast = fast.next.next;
         }
+        revertData = reversedList(slow);
+        boolean check = false;
+        check = compareTwoHalves(head, revertData);
+        if((head == null) && (revertData == null))
+        {
+            return true;
+        }
+        if (check)
+        {
+            return true;
+        }
         return false;
     }
     public static boolean compareTwoHalves(LinkedListNode firstHalf, LinkedListNode secondHalf)
@@ -47,6 +58,28 @@ public class main
         }
 
     public static void main(String[] args) {
+        int[][] input = {
+                {2, 4, 6, 4, 2},
+                {0, 3, 5, 5, 0},
+                {9, 27, 4, 4, 27, 9},
+                {5, 4, 7, 9, 4, 5},
+                {5, 10, 15, 20, 15, 10, 5}
+        };
 
+        for (int i = 0; i < input.length; i++) {
+            System.out.print(i + 1);
+            LinkedList<Integer> list = new LinkedList<Integer>();
+            list.createLinkedList(input[i]);
+            System.out.print(".\tLinked list:  ");
+            PrintList.printListWithForwardArrow(list.head);
+            System.out.print("\tIs it a palindrome?  ");
+            boolean result = palindrome(list.head);
+            if (result) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+//            System.out.println(PrintHyphens.repeat("-", 100));
+        }
     }
 }
