@@ -23,5 +23,12 @@ public class LinkedList<T>
     }
     // create LinkedList method will create the linkedlist using the given integer array with the help of
     // the insertAtHead method.
-
+    public void createLinkedList(int[] list)
+    {
+        for (int i = list.length-1;i>=0;i--)
+        {
+            LinkedListNode newNode = new LinkedListNode(list[i]);
+            insertAtHead(newNode);
+        }
+    }
 }
