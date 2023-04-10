@@ -29,5 +29,5 @@ public class INterval
     public void setClosed(boolean closed) {
         this.closed = closed;
     }
-    
+
 }
