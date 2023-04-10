@@ -13,32 +13,33 @@ class LinkedList<T> {
 
     // insertNodeAtHead method will insert a LinkedListNode at head
     // of a linked list.
-//    public void insertNodeAtHead(LinkedListNode node) {
-//        if (this.head == null) {
-//            this.head = node;
-//        } else {
-//            node.next = this.head;
-//            this.head = node;
-//        }
-//    }
-    public void insertNodeAtHead(LinkedListNode node)
-    {
-        if(this.head == null)
-        {
+    public void insertNodeAtHead(LinkedListNode node) {
+        if (this.head == null) {
             this.head = node;
         } else {
             node.next = this.head;
             this.head = node;
         }
     }
+
     // createLinkedList method will create the linked list using the
     // given integer array with the help of InsertAthead method.
-    public void createLinkedList(int[] lst) {
-        for (int i = lst.length - 1; i >= 0; i--) {
+//    public void createLinkedList(int[] lst) {
+//        for (int i = lst.length - 1; i >= 0; i--) {
+//            LinkedListNode newNode = new LinkedListNode(lst[i]);
+//            insertNodeAtHead(newNode);
+//        }
+//    }
+
+    // create LinkedList method will create the linked list using
+    // the given integer array with help of InsertAtHead method.
+    public void createLinkedList(int[] lst)
+    {
+        for (int i=lst.length-1;i>=0;i--)
+        {
             LinkedListNode newNode = new LinkedListNode(lst[i]);
             insertNodeAtHead(newNode);
         }
     }
-
 
 }
