@@ -8,7 +8,7 @@ import java.util.List;
 
 public class main
 {
-    public static void insertInterval(List<Interval> existingIntervals, Interval newInterval)
+    public static List <Interval> insertInterval(List<Interval> existingIntervals, Interval newInterval)
     {
         // Read the starting and ending of the new interval, into separate variables
         int newStart = newInterval.getStart();
@@ -33,14 +33,27 @@ public class main
         }
         else
         {
-            output.get(output.size()-1).setEnd
+            output.get(output.size()-1).setEnd(Math.max(output.get(output.size()-1).getEnd(), newEnd));
         }
+        while(i<n)
+        {
+            Interval ei = existingIntervals.get(i);
+            int start = ei.getStart();
+            int end = ei.getEnd();
+            if (output.get(output.size()-1).getEnd() < start) output.add(ei);
+            else output.get(output.size()-1).setEnd(Math.max(output.get(output.size() -1).getEnd(), end));
+            i +=1;
+        }
+        return output;
 
     }
 
     public static void main(String[] args) {
         Interval newInterval = new Interval(5, 7);
         List < Interval > existingIntervals = Arrays.asList(new Interval(1, 2), new Interval(3, 5), new Interval(6, 8));
-        insertInterval(existingIntervals, newInterval);
+        List < Interval > output = insertInterval(existingIntervals, newInterval);
+        System.out.println("Existing intervals: " + display(existingIntervals));
+        System.out.println("New interval: [" + newInterval.getStart() + ", " + newInterval.getEnd() + "]");
+        System.out.println("\nNew intervals list: " + display(output));
     }
 }
