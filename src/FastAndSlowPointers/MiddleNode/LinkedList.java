@@ -1,13 +1,22 @@
 package FastAndSlowPointers.MiddleNode;
 import java.util.*;
 // template for the linkedlist class
-public class LinkedList
+public class LinkedList <T>
 {
-    LinkedListNode head;
+    public LinkedListNode head;
     // constructor for linkedist
-    LinkedList(LinkedList head)
-    {
-        this.head = head;
 
+    public LinkedList()
+    {
+        this.head = null;
+    }
+
+    // create method for inseretingAtHead
+    public void insertAtHead(LinkedList node)
+    {
+        if (this.head == null)
+        {
+            this.head = node;
+        }
     }
 }
