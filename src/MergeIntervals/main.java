@@ -15,5 +15,7 @@ public class main
             System.out.println("The list is empty");
             return result;
         }
+        // Adding pair in the result list
+        result.add(new Interval(intervals.get(0).getStart(), intervals.get(0).getEnd()));
     }
 }
