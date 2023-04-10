@@ -1,4 +1,6 @@
 package FastAndSlowPointers.MiddleNode;
 
-public class main {
+public class main
+{
+
 }
