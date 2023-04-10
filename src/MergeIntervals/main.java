@@ -17,7 +17,7 @@ public class main {
             int currEnd = intervals.get(i).getEnd();
             int prevEnd = lastAddedInterval.getEnd();
             if (currStart <= prevEnd) {
-                lastAddedInterval.setEnd(Math.max(currEnd, prevEnd));
+//                lastAddedInterval.setEnd(Math.max(currEnd, prevEnd));
             } else {
                 result.add(new Interval(currStart, currEnd));
             }
