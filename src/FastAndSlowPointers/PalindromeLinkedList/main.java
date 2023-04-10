@@ -22,7 +22,7 @@ public class main
     {
         while(firstHalf != null & secondHalf != null)
         {
-            if(firstHalf.data != secondHalf)
+            if(firstHalf.data != secondHalf.data)
             {
                 return false;
             }
