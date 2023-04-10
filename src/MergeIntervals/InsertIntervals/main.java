@@ -6,10 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class main
-{
-    public static List <Interval> insertInterval(List<Interval> existingIntervals, Interval newInterval)
-    {
+public class main {
+    public static List<INterval> insertInterval(List<INterval> existingIntervals, INterval newInterval) {
         // Read the starting and ending of the new interval, into separate variables
         int newStart = newInterval.getStart();
         int newEnd = newInterval.getEnd();
@@ -17,18 +15,16 @@ public class main
         // Initialize variables to help in iterationg over the existing intervals list
         int i = 0;
         int n = existingIntervals.size();
-        List <Interval> output = new ArrayList<Interval>();
+        List<INterval> output = new ArrayList<INterval>();
         // Append all intervals that start and end before the new interval to the output list.
         System.out.println("Let's start adding these intervals into our output list one by one, until we come across an overlapping interval.");
 
-        while(i<n && existingIntervals.get(i).getStart() < newStart)
-        {
+        while (i < n && existingIntervals.get(i).getStart() < newStart) {
             output.add(existingIntervals.get(i));
             System.out.println("We can add " + (i + 1) + " intervals in our new list without merging any intervals yet:");
             i += 1;
         }
-        if (output.size() == 0 || output.get(output.size()-1).getEnd()<newStart)
-        {
+        if (output.size() == 0 || output.get(output.size() - 1).getEnd() < newStart) {
             output.add(newInterval);
         }
         else
@@ -37,7 +33,7 @@ public class main
         }
         while(i<n)
         {
-            Interval ei = existingIntervals.get(i);
+            INterval ei = existingIntervals.get(i);
             int start = ei.getStart();
             int end = ei.getEnd();
             if (output.get(output.size()-1).getEnd() < start) output.add(ei);
