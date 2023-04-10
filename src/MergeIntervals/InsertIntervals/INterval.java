@@ -21,6 +21,10 @@ public class INterval
     public int getStart() {
         return start;
     }
+    public void setEnd(int end)
+    {
+        this.end = end;
+    }
 
     public int getEnd() {
         return end;

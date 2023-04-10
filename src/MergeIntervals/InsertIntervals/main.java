@@ -27,6 +27,14 @@ public class main
             System.out.println("We can add " + (i + 1) + " intervals in our new list without merging any intervals yet:");
             i += 1;
         }
+        if (output.size() == 0 || output.get(output.size()-1).getEnd()<newStart)
+        {
+            output.add(newInterval);
+        }
+        else
+        {
+            output.get(output.size()-1).setEnd
+        }
 
     }
 
