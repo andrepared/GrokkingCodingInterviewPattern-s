@@ -10,6 +10,11 @@ public class LinkedList
     {
         this.head = null;
     }
+    public LinkedList(List<Integer> inputList)
+    {
+        createLinkedList(inputList);
+    }
+
     //insertNodeAtHead will be helper function
     public void insertNodeAtHead(LinkedListNode node)
     {
