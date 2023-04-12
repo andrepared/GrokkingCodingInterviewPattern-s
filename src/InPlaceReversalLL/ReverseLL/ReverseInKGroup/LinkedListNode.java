@@ -1,5 +1,4 @@
 package InPlaceReversalLL.ReverseLL.ReverseInKGroup;
 
-public class LinkedList
-{
+public class LinkedListNode {
 }
