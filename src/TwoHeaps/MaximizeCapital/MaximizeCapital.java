@@ -9,10 +9,17 @@ public class MaximizeCapital
 {
     public static int maximumCapital(int c, int k, int[] capitals, int[] profits)
     {
-        PriorityQueue<Integer> CapitalminHeap = new PriorityQueue<Integer>();
+        int n = capitals.length;
+        int currentCapital = c;
+        PriorityQueue<int[]> CapitalminHeap = new PriorityQueue<Integer>((a,b) -> a[0] - b[0]);
+        for (int i =0;i<n;i++)
+        {
+            CapitalminHeap.offer(new int[] {capitals[i], i});
+        }
+        PriorityQueue<int[]> ProfitsMaxHeap = new PriorityQueue<>((a,b) -> b[0] - a[0]);
 
         int i = 0;
-        // Insert all capital's values to a min-heap
+        // 
         while(i<capitals.length)
         {
             CapitalminHeap.add(capitals[i]);
