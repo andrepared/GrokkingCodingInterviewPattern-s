@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1561c30-4344-400a-9100-be386c96aa29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,23 +25,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="46" />
+          <entry key="java" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
-          <entry key="java" value="22171" />
+          <entry key="java" value="22424" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22171" />
+          <entry key="JAVA" value="22424" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
@@ -49,23 +49,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MergeIntervals/EmployeeFreeTime/Interval.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-              <folding>
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MergeIntervals/EmployeeFreeTime/main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,11 +74,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/PrintList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -198,6 +208,9 @@
         <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/main.java" />
         <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/Main.java" />
+        <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/PrintList.java" />
+        <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedListNode.java" />
+        <option value="$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedList.java" />
       </list>
     </option>
   </component>
@@ -233,6 +246,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ReverseLL" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GrokkingCodingInterviewPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GrokkingCodingInterviewPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ReverseLL" type="462c0819:PsiDirectoryNode" />
+              <item name="ReverseInKGroup" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -242,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1681271542853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1681271697139" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -620,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/LinkedListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/PrintList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -661,6 +674,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/PrintList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/LinkedListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InPlaceReversalLL/ReverseLL/ReverseInKGroup/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
