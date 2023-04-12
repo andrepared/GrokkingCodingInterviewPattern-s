@@ -19,14 +19,29 @@ public class MaximizeCapital
         PriorityQueue<int[]> ProfitsMaxHeap = new PriorityQueue<>((a,b) -> b[0] - a[0]);
 
         int i = 0;
-        // 
-        while(i<capitals.length)
+        // Calculate capital of all the required number of projects
+        // containing max profit
+        while(i<k)
         {
-            CapitalminHeap.add(capitals[i]);
+            // select projects(in the range of the current capital)
+            // then push them onto the max-heap
+            while(!CapitalminHeap.isEmpty() && CapitalminHeap.peek()[0] <= currentCapital)
+            {
+                int[] j = CapitalminHeap.poll();
+                ProfitsMaxHeap.offer(new int[]{profits[j[1]], j[1]});
+            }
+            // check if the max-heap is empty
+            if (ProfitsMaxHeap.isEmpty())
+            {
+                break;
+            }
+            // Select those projects from the max-heap that contain the max profit
+            int x = ProfitsMaxHeap.poll()[0];
+            System.out.println("\t\tUpdated capital = " + currentCapital + " + " +x);
+            currentCapital += x;
             i++;
         }
-        printCapitalsMinHeap(CapitalminHeap);
-        return 0;
+        return currentCapital;
     }
     static void printCapitalsMinHeap(PriorityQueue<Integer> capitals)
     {
