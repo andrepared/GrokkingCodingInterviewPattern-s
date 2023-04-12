@@ -47,9 +47,9 @@ public class main {
     public static void main(String[] args) {
         Interval newInterval = new Interval(5, 7);
         List < Interval > existingIntervals = Arrays.asList(new Interval(1, 2), new Interval(3, 5), new Interval(6, 8));
-        List < Interval > output = insertInterval(existingIntervals, newInterval);
-        System.out.println("Existing intervals: " + display(existingIntervals));
-        System.out.println("New interval: [" + newInterval.getStart() + ", " + newInterval.getEnd() + "]");
-        System.out.println("\nNew intervals list: " + display(output));
+//        List < Interval > output = insertInterval(existingIntervals, newInterval);
+//        System.out.println("Existing intervals: " + display(existingIntervals));
+//        System.out.println("New interval: [" + newInterval.getStart() + ", " + newInterval.getEnd() + "]");
+//        System.out.println("\nNew intervals list: " + display(output));
     }
 }
