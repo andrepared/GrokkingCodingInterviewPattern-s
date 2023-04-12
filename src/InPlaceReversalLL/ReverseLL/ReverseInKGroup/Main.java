@@ -89,7 +89,7 @@ public class Main
         inputLinkedList.createLinkedList(inputList);
         System.out.print("The original linked list: ");
         PrintList.printListWithForwardArrow(inputLinkedList.head);
-        LinkedListNode result = reverseLinkedList(inputLinkedList.head, 3);
+        LinkedListNode result = reversedLinkedList(inputLinkedList.head, 3);
         System.out.print("\nReversed linked list, with k = " + 3 + ": ");
         PrintList.printListWithForwardArrow(result);
     }
