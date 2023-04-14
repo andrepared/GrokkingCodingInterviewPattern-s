@@ -15,7 +15,7 @@ public class Main
         {
             // Finding the mid, using integer division.
             mid = start + (end -start) / 2;
-            // Targer value is present at the middle of the array.
+            // Target value is present at the middle of the array.
 
         }
     }
