@@ -5,11 +5,8 @@ import java.util.List;
 
 public class Main
 {
-    public static int binarySearch (List<Integer> nums, int target)
+    public static int binarySearch (List<Integer> nums, int start, int end, int target)
     {
-        int start = 0;
-        int end = nums.size() -1;
-        int mid = 0;
         if(start > end) return -1;
 
         while(start<=end)
