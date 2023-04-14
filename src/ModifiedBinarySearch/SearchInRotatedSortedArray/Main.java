@@ -9,18 +9,16 @@ public class Main
     {
         if(start > end) return -1;
 
-        while(start<=end)
-        {
-            // Finding the mid, using integer division.
-            mid = start + (end -start) / 2;
+        // Finding the mid using integer division.
+        int mid = start + (end -start) / 2;
             // Target value is present at the middle of the array.
             if (nums.get(mid) == target) return mid;
             // If the target value is greater than the mid, ignore the first half.
-            else if (nums.get(mid)>target) return start = mid +1;
+            else if (nums.get(mid)>target) return binarySearch(nums, mid+1, end, target);
             // If the target value is less than the mid, ignore the 2nd half.
-            else if (nums.get(mid)<target) return end = mid -1;
-        }
-        return -1;
+            else return binarySearch(nums, start, mid-1, target);
+
+
     }
     public static void main(String args[]) {
         List < Integer > targetList = Arrays.asList(3, 60, 15, 11);
